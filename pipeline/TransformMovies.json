@@ -1,6 +1,7 @@
 {
 	"name": "TransformMovies",
 	"properties": {
+		"description": "Aggregating movie ratings",
 		"activities": [
 			{
 				"name": "Transform Movies",

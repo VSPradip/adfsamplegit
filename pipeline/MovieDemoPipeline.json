@@ -1,6 +1,7 @@
 {
 	"name": "MovieDemoPipeline",
 	"properties": {
+		"description": "Movie ratings demo",
 		"activities": [
 			{
 				"name": "ExecuteMovieDemoDataFlow",
