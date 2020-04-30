@@ -26,6 +26,9 @@
 		"srcblobconn_connectionString": {
 			"value": ""
 		},
+		"AzureSqlDatabasewatermark_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},
