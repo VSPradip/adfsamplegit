@@ -11,6 +11,9 @@
 		"AzureSqlDatabaseLinkedService_connectionString": {
 			"value": ""
 		},
+		"AzureSqlDatabasewatermark_connectionString": {
+			"value": ""
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
@@ -24,9 +27,6 @@
 			"value": ""
 		},
 		"srcblobconn_connectionString": {
-			"value": ""
-		},
-		"AzureSqlDatabasewatermark_connectionString": {
 			"value": ""
 		},
 		"containerUri": {

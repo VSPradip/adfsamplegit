@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabaseLinkedService'"
 		},
+		"AzureSqlDatabasewatermark_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabasewatermark'"
+		},
 		"AzureStorageLinkedService_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageLinkedService'"
@@ -34,10 +38,6 @@
 		"srcblobconn_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'srcblobconn'"
-		},
-		"AzureSqlDatabasewatermark_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabasewatermark'"
 		},
 		"containerUri": {
 			"type": "string",
@@ -72,6 +72,9 @@
 					"AzureSqlDatabaseLinkedService_connectionString": {
 						"value": "[parameters('AzureSqlDatabaseLinkedService_connectionString')]"
 					},
+					"AzureSqlDatabasewatermark_connectionString": {
+						"value": "[parameters('AzureSqlDatabasewatermark_connectionString')]"
+					},
 					"AzureStorageLinkedService_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService_connectionString')]"
 					},
@@ -86,9 +89,6 @@
 					},
 					"srcblobconn_connectionString": {
 						"value": "[parameters('srcblobconn_connectionString')]"
-					},
-					"AzureSqlDatabasewatermark_connectionString": {
-						"value": "[parameters('AzureSqlDatabasewatermark_connectionString')]"
 					}
 				}
 			},
