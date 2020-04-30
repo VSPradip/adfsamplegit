@@ -1,5 +1,5 @@
 {
-	"name": "IncrementalCopyPipeline1",
+	"name": "MultiIncrementalCopyPipeline",
 	"properties": {
 		"annotations": []
 	}
