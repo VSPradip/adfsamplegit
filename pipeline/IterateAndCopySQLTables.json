@@ -1,0 +1,12 @@
+{
+	"name": "IterateAndCopySQLTables",
+	"properties": {
+		"description": "IterateAndCopySQLTables - pipeline takes a list of tables as a parameter. For each table in the list, it copies data from the table in Azure SQL Database to Azure Synapse Analytics (formerly SQL DW) using staged copy and PolyBase.",
+		"parameters": {
+			"tableList": {
+				"type": "array"
+			}
+		},
+		"annotations": []
+	}
+}
