@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "svdadfdelta"
+		},
+		"AzureBlobStoragecpytool_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDWLinkedService_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabaseLinkedService_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabasewatermark_connectionString": {
+			"value": ""
+		},
+		"AzureStorageLinkedService_connectionString": {
+			"value": ""
+		},
+		"MovSrcBlob_connectionString": {
+			"value": ""
+		},
+		"TgtBlobConn_connectionString": {
+			"value": ""
+		},
+		"adfdataflow_connectionString": {
+			"value": ""
+		},
+		"srcblobconn_connectionString": {
+			"value": ""
+		},
+		"Trigger_vh3_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"Trigger_vh3_properties_pipeline_parameters_windowEnd": {
+			"value": "@trigger().outputs.windowEndTime"
+		}
+	}
+}
