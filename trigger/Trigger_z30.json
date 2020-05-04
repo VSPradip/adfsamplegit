@@ -2,7 +2,7 @@
 	"name": "Trigger_z30",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "TimePartitionedCopy",
