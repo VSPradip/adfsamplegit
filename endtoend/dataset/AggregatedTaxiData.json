@@ -1,0 +1,17 @@
+{
+	"name": "AggregatedTaxiData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLDW",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "AggregateTaxiData"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
