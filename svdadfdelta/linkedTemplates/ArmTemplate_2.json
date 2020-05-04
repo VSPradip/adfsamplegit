@@ -175,7 +175,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipeline": {
 					"pipelineReference": {
 						"referenceName": "DeltaCopyFromBlobPipeline",
@@ -197,6 +197,7 @@
 					"frequency": "Minute",
 					"interval": 15,
 					"startTime": "2020-05-04T07:50:00.000Z",
+					"endTime": "2020-05-04T10:19:00.956Z",
 					"delay": "00:00:00",
 					"maxConcurrency": 50,
 					"retryPolicy": {
@@ -213,7 +214,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipeline": {
 					"pipelineReference": {
 						"referenceName": "TimePartitionedCopy",
@@ -231,7 +232,7 @@
 					"frequency": "Minute",
 					"interval": 15,
 					"startTime": "2020-05-04T08:11:00.000Z",
-					"endTime": "2020-05-05T08:11:00.000Z",
+					"endTime": "2020-05-05T10:11:00.000Z",
 					"delay": "00:00:00",
 					"maxConcurrency": 50,
 					"retryPolicy": {
