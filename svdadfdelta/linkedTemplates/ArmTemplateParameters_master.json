@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "svdadfdelta"
 		},
+		"AzBlobStorageTimeParti_connectionString": {
+			"value": ""
+		},
 		"AzureBlobStoragecpytool_connectionString": {
 			"value": ""
 		},
@@ -37,6 +40,9 @@
 		},
 		"Trigger_vh3_properties_pipeline_parameters_windowEnd": {
 			"value": "@trigger().outputs.windowEndTime"
+		},
+		"Trigger_z30_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
 		},
 		"containerUri": {
 			"value": ""

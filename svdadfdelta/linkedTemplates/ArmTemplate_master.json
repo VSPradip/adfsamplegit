@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "svdadfdelta"
 		},
+		"AzBlobStorageTimeParti_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzBlobStorageTimeParti'"
+		},
 		"AzureBlobStoragecpytool_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStoragecpytool'"
@@ -51,6 +55,10 @@
 			"type": "string",
 			"defaultValue": "@trigger().outputs.windowEndTime"
 		},
+		"Trigger_z30_properties_pipeline_parameters_windowStart": {
+			"type": "string",
+			"defaultValue": "@trigger().outputs.windowStartTime"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -77,6 +85,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"AzBlobStorageTimeParti_connectionString": {
+						"value": "[parameters('AzBlobStorageTimeParti_connectionString')]"
 					},
 					"AzureBlobStoragecpytool_connectionString": {
 						"value": "[parameters('AzureBlobStoragecpytool_connectionString')]"
@@ -122,17 +133,40 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ArmTemplate_0')]"
+			]
+		},
+		{
+			"name": "ArmTemplate_2",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
 					},
 					"Trigger_vh3_properties_pipeline_parameters_windowStart": {
 						"value": "[parameters('Trigger_vh3_properties_pipeline_parameters_windowStart')]"
 					},
 					"Trigger_vh3_properties_pipeline_parameters_windowEnd": {
 						"value": "[parameters('Trigger_vh3_properties_pipeline_parameters_windowEnd')]"
+					},
+					"Trigger_z30_properties_pipeline_parameters_windowStart": {
+						"value": "[parameters('Trigger_z30_properties_pipeline_parameters_windowStart')]"
 					}
 				}
 			},
 			"dependsOn": [
-				"[resourceId('Microsoft.Resources/deployments', 'ArmTemplate_0')]"
+				"[resourceId('Microsoft.Resources/deployments', 'ArmTemplate_1')]"
 			]
 		}
 	]
