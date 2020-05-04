@@ -1,0 +1,17 @@
+{
+	"name": "SourceDataset_vh3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStoragecpytool",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "source"
+			}
+		}
+	}
+}
