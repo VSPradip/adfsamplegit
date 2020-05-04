@@ -11,9 +11,10 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@CONCAT('Incremental-', pipeline().RunId, '.txt')",
+					"value": "@CONCAT('CT_Incremental-', pipeline().RunId, '.txt')",
 					"type": "Expression"
 				},
+				"folderPath": "incchgtracking",
 				"container": "adftutorial"
 			},
 			"columnDelimiter": ",",
@@ -21,5 +22,6 @@
 			"quoteChar": "\""
 		},
 		"schema": []
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
 }
