@@ -1,0 +1,26 @@
+{
+	"name": "DestinationDataset_z30",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzBlobStorageTimeParti",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"cw_folderPath": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@dataset().cw_folderPath",
+					"type": "Expression"
+				},
+				"container": "destination"
+			}
+		}
+	}
+}
