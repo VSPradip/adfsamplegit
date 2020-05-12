@@ -1,0 +1,15 @@
+{
+	"name": "Cosmosdenormsink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureCosmosDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"typeProperties": {
+			"collectionName": "orders"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

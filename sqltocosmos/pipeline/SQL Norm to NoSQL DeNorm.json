@@ -1,0 +1,33 @@
+{
+	"name": "SQL Norm to NoSQL DeNorm",
+	"properties": {
+		"description": "Moving a Normalized data in SQL (3NF) to Comos in a Denormalized Fashion",
+		"activities": [
+			{
+				"name": "Sql to Cosmos",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "sqltocosmos",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					}
+				}
+			}
+		],
+		"annotations": []
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
