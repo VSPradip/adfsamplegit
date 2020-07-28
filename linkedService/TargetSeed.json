@@ -1,0 +1,13 @@
+{
+	"name": "TargetSeed",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Loading the target seed data into cosmos db",
+		"annotations": [],
+		"type": "CosmosDb",
+		"typeProperties": {
+			"connectionString": "AccountEndpoint=https://svdcosmosdb.documents.azure.com:443/;Database=capitaledge;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNWRENBUEVER0VfOWIxNTI3ODEtOThkOS00MzU2LWJhMjUtN2Y1ZGQzODQ5MTNmIg0KfQ=="
+		}
+	}
+}

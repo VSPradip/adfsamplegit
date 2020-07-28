@@ -1,0 +1,306 @@
+{
+	"name": "SourceDataset_d1x",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SourceSeed",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "capegdesspseed"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Discriminator": {
+					"type": "string"
+				},
+				"appBundleClassDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"appBundleClassId": {
+								"type": "string"
+							},
+							"appBundleClassName": {
+								"type": "string"
+							},
+							"appBundleClassDescription": {
+								"type": "string"
+							},
+							"key": {
+								"type": "string"
+							},
+							"appClassIds": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"id": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"createdOn": {
+					"type": "string"
+				},
+				"modifiedOn": {
+					"type": "string"
+				},
+				"createdBy": {
+					"type": "string"
+				},
+				"modifiedBy": {
+					"type": "string"
+				},
+				"deleted": {
+					"type": "boolean"
+				},
+				"masterId": {
+					"type": "string"
+				},
+				"id": {
+					"type": "string"
+				},
+				"_rid": {
+					"type": "string"
+				},
+				"_self": {
+					"type": "string"
+				},
+				"_etag": {
+					"type": "string"
+				},
+				"_attachments": {
+					"type": "string"
+				},
+				"_ts": {
+					"type": "integer"
+				},
+				"appCategoryDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"appCategoryId": {
+								"type": "string"
+							},
+							"appCategoryName": {
+								"type": "string"
+							},
+							"appCategoryDescription": {
+								"type": "string"
+							},
+							"colorCode": {
+								"type": "string"
+							},
+							"iconName": {
+								"type": "string"
+							},
+							"key": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"appClassDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"appClassId": {
+								"type": "string"
+							},
+							"appClassName": {
+								"type": "string"
+							},
+							"appClassDescription": {
+								"type": "string"
+							},
+							"appCategoryId": {
+								"type": "string"
+							},
+							"key": {
+								"type": "string"
+							},
+							"channelOnePermittedFlag": {
+								"type": "boolean"
+							},
+							"demoURL": {
+								"type": "string"
+							},
+							"appRelativeURL": {
+								"type": "string"
+							},
+							"appPlatformClassId": {
+								"type": "string"
+							},
+							"autoPublish": {
+								"type": "boolean"
+							}
+						}
+					}
+				},
+				"appPlatformClassDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"appPlatformClassId": {
+								"type": "string"
+							},
+							"appPlatformClassName": {
+								"type": "string"
+							},
+							"appPlatformClassDescription": {
+								"type": "string"
+							},
+							"defaultRoleId": {
+								"type": "string"
+							},
+							"deploymentPipelineDefinitionId": {
+								"type": "integer"
+							},
+							"key": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"appPlatformStatusDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"appPlatformStatusId": {
+								"type": "string"
+							},
+							"appPlatformStatusName": {
+								"type": "string"
+							},
+							"appPlatformStatusDescription": {
+								"type": "string"
+							},
+							"key": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"channelDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"channelId": {
+								"type": "string"
+							},
+							"channelName": {
+								"type": "string"
+							},
+							"channelDescription": {
+								"type": "string"
+							},
+							"key": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"clientSizeDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"clientSizeId": {
+								"type": "string"
+							},
+							"clientSizeName": {
+								"type": "string"
+							},
+							"clientSizeDescription": {
+								"type": "string"
+							},
+							"key": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"locationDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"locationId": {
+								"type": "string"
+							},
+							"locationName": {
+								"type": "string"
+							},
+							"locationDescription": {
+								"type": "string"
+							},
+							"locationBaseURL": {
+								"type": "string"
+							},
+							"key": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"projectStatusDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"projectStatusId": {
+								"type": "string"
+							},
+							"projectStatusName": {
+								"type": "string"
+							},
+							"projectStatusDescription": {
+								"type": "string"
+							},
+							"key": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"projectTypeDetails": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"projectTypeId": {
+								"type": "string"
+							},
+							"projectTypeName": {
+								"type": "string"
+							},
+							"projectTypeDescription": {
+								"type": "string"
+							},
+							"key": {
+								"type": "string"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

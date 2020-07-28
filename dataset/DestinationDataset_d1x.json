@@ -1,0 +1,15 @@
+{
+	"name": "DestinationDataset_d1x",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TargetSeed",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"typeProperties": {
+			"collectionName": "capedgemigauto"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
